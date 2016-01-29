@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float movementSpeed = 0.1f;
-    public float minInput = 0.1f;
-    public float rotationSpeed = 1f;
+    public float movementSpeed = 0.2f;
+    public float minInput = 0.25f;
+    public float rotationSpeed = 8f;
 
     private Vector3 frontAxis = new Vector3(0, 1, 0);
 
@@ -14,14 +14,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateInput();
-        Debug.DrawLine(transform.position, transform.position + transform.forward, Color.blue);
-    }
-
+    
     void FixedUpdate()
     {
         UpdateInput();
