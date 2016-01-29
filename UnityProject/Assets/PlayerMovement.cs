@@ -45,12 +45,9 @@ public class PlayerMovement : MonoBehaviour
         if (velocity.magnitude != 0f)
         {
             var vn = velocity.normalized;
-            //transform.rotation = Quaternion.LookRotation(vn);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(vn, Vector3.up), rotationSpeed);
         }
-
-        //Debug.DrawLine(transform.position, target, Color.red);
-        print(velocity);
+        
         transform.position += velocity;
 
     }
