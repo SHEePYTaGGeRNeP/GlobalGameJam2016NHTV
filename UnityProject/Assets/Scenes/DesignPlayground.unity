@@ -282,6 +282,7 @@ GameObject:
   - 81: {fileID: 682999558}
   - 114: {fileID: 682999564}
   - 82: {fileID: 682999563}
+  - 114: {fileID: 682999565}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -369,7 +370,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -446,6 +447,27 @@ MonoBehaviour:
   playerFightMusicLoop: {fileID: 8300000, guid: 4bd14ccdd907ced4fa3449fc1ac788a6,
     type: 3}
   listSFX: []
+--- !u!114 &682999565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682999557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7e5c78abcf45b4a9463a0678dc0923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossMoansL:
+  - {fileID: 8300000, guid: 70fdcf327c0bf4948a7015bf4b42f30f, type: 3}
+  - {fileID: 8300000, guid: 4b1f0b9202e7b7744b84c803385777db, type: 3}
+  impactsL: []
+  playerMoansL: []
+  hitSplashesL: []
+  attacksL: []
+  footstepsL: []
+  raiseShield: {fileID: 0}
+  blockAttack: {fileID: 0}
 --- !u!1 &1032076686
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,11 +736,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22481558, guid: 28124f0b40a21aa4aaa19faac5d6882f, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22481558, guid: 28124f0b40a21aa4aaa19faac5d6882f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28124f0b40a21aa4aaa19faac5d6882f, type: 2}
@@ -850,11 +872,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421326, guid: 21e644604c3d70347bac3bf5bc53f150, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22421326, guid: 21e644604c3d70347bac3bf5bc53f150, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21e644604c3d70347bac3bf5bc53f150, type: 2}
@@ -1001,11 +1023,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421326, guid: 21e644604c3d70347bac3bf5bc53f150, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22421326, guid: 21e644604c3d70347bac3bf5bc53f150, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 140908, guid: 21e644604c3d70347bac3bf5bc53f150, type: 2}
       propertyPath: m_Name
