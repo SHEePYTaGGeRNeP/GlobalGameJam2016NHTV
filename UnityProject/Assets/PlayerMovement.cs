@@ -1,5 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+
+using UnityEngine;
 using System.Collections;
+
+using Assets.Scripts.Units;
+
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
     }
-    
+
     void FixedUpdate()
     {
         UpdateInput();
@@ -33,13 +39,20 @@ public class PlayerMovement : MonoBehaviour
         var inputPrefix = playerNumber.ToString() + "_";
 
         Vector3 velocity = new Vector3(0, 0, 0);
-        float vaxis = 0f, haxis = 0f;
-        if ((haxis = Input.GetAxis(inputPrefix+"Horizontal")) > minInput || haxis < -minInput)
+        float vaxis = Input.GetAxis(inputPrefix + "Vertical");
+        float haxis = Input.GetAxis(inputPrefix + "Horizontal");
+        if (vaxis == 0)
+            vaxis = KeyboardManager.GetPlayerVertical(this.playerNumber);
+        if (haxis == 0)
+            haxis = KeyboardManager.GetPlayerHorizontal(this.playerNumber);
+
+        Debug.Log(String.Format("x: {0} y: {1}", haxis, vaxis));
+        if (haxis > minInput || haxis < -minInput)
         {
             velocity += new Vector3(movementSpeed * haxis, 0, 0);
         }
 
-        if ((vaxis = Input.GetAxis(inputPrefix+"Vertical")) > minInput || vaxis < -minInput)
+        if (vaxis > minInput || vaxis < -minInput)
         {
             velocity += new Vector3(0, 0, movementSpeed * -vaxis);
         }
