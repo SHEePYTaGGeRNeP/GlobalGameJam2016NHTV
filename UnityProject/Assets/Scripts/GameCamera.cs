@@ -7,6 +7,9 @@
     [RequireComponent(typeof(Camera))]
     public class GameCamera : MonoBehaviour
     {
+
+
+        public bool PlayerFight = true;
         public bool Logging = true;
         public Transform[] Targets;
         public Transform CenterTransform;
@@ -32,6 +35,15 @@
         {
             int height = this._camera.pixelHeight;
             int width = this._camera.pixelWidth;
+            if (this.PlayerFight)
+                this.PlayerFightUpdate(width, height);
+            // TODO: LERP Camera with this._targetPosition
+            if (this.transform.position != this._targetPosition)
+                this.transform.position = this._targetPosition;
+        }
+
+        private void PlayerFightUpdate(int width, int height)
+        {
             Rect zoomOutRect = new Rect(this.ZoomOutMargin, this.ZoomOutMargin, width - this.ZoomOutMargin, height - this.ZoomOutMargin);
             Rect zoomInRect = new Rect(this.ZoomInMargin, this.ZoomInMargin, width - this.ZoomInMargin, height - this.ZoomInMargin);
             this._currentCameraDistance = Vector3.Distance(this.transform.position, this.CenterTransform.position);
@@ -46,12 +58,7 @@
                 this.ZoomIn(this._targetPosition);
             }
             else
-            {
                 this.SetMiddle();
-            }
-            // TODO: LERP Camera with this._targetPosition
-            if (this.transform.position != this._targetPosition)
-                this.transform.position = this._targetPosition;
         }
 
         private void SetMiddle()
