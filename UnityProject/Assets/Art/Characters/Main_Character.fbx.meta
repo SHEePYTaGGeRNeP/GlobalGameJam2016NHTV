@@ -1,0 +1,1126 @@
+fileFormatVersion: 2
+guid: 94b53621485e83145ad6897d06e82f1f
+timeCreated: 1454147949
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: character
+    100002: geo
+    100004: jnts
+    100006: L_eye
+    100008: //RootNode
+    100010: mouth1
+    100012: R_eye
+    100014: Shield
+    100016: Slave_C_chest
+    100018: Slave_C_head
+    100020: Slave_C_head_L_eye
+    100022: Slave_C_head_R_eye
+    100024: Slave_C_hip
+    100026: Slave_C_loin1
+    100028: Slave_C_loin2
+    100030: Slave_C_loin3
+    100032: Slave_C_loin4
+    100034: Slave_C_loin5
+    100036: Slave_C_mouthBot
+    100038: Slave_C_mouthTop
+    100040: Slave_C_neck
+    100042: Slave_C_spine1
+    100044: Slave_C_spine2
+    100046: Slave_L_clavicle
+    100048: Slave_L_elbow
+    100050: Slave_L_eyebrow1
+    100052: Slave_L_eyebrow2
+    100054: Slave_L_foot
+    100056: Slave_L_hand
+    100058: Slave_L_hip
+    100060: Slave_L_knee
+    100062: Slave_L_mouthCorn
+    100064: Slave_L_shoulder
+    100066: Slave_R_clavicle
+    100068: Slave_R_elbow
+    100070: Slave_R_eyebrow1
+    100072: Slave_R_eyebrow2
+    100074: Slave_R_foot
+    100076: Slave_R_hand
+    100078: Slave_R_hip
+    100080: Slave_R_knee
+    100082: Slave_R_mouthCorn
+    100084: Slave_R_shoulder
+    100086: Spear
+    100088: Weapons
+    400000: character
+    400002: geo
+    400004: jnts
+    400006: L_eye
+    400008: //RootNode
+    400010: mouth1
+    400012: R_eye
+    400014: Shield
+    400016: Slave_C_chest
+    400018: Slave_C_head
+    400020: Slave_C_head_L_eye
+    400022: Slave_C_head_R_eye
+    400024: Slave_C_hip
+    400026: Slave_C_loin1
+    400028: Slave_C_loin2
+    400030: Slave_C_loin3
+    400032: Slave_C_loin4
+    400034: Slave_C_loin5
+    400036: Slave_C_mouthBot
+    400038: Slave_C_mouthTop
+    400040: Slave_C_neck
+    400042: Slave_C_spine1
+    400044: Slave_C_spine2
+    400046: Slave_L_clavicle
+    400048: Slave_L_elbow
+    400050: Slave_L_eyebrow1
+    400052: Slave_L_eyebrow2
+    400054: Slave_L_foot
+    400056: Slave_L_hand
+    400058: Slave_L_hip
+    400060: Slave_L_knee
+    400062: Slave_L_mouthCorn
+    400064: Slave_L_shoulder
+    400066: Slave_R_clavicle
+    400068: Slave_R_elbow
+    400070: Slave_R_eyebrow1
+    400072: Slave_R_eyebrow2
+    400074: Slave_R_foot
+    400076: Slave_R_hand
+    400078: Slave_R_hip
+    400080: Slave_R_knee
+    400082: Slave_R_mouthCorn
+    400084: Slave_R_shoulder
+    400086: Spear
+    400088: Weapons
+    4300000: character
+    4300002: L_eye
+    4300004: mouth1
+    4300006: R_eye
+    4300008: Spear
+    4300010: Shield
+    7400000: Walking
+    7400002: Attacking
+    7400004: Idle
+    7400006: Shield up
+    7400008: Hit
+    7400010: Hit heavy
+    7400012: Death
+    7400014: Shield down
+    9500000: //RootNode
+    13700000: character
+    13700002: L_eye
+    13700004: mouth1
+    13700006: R_eye
+    13700008: Shield
+    13700010: Spear
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walking
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attacking
+      takeName: Take 001
+      firstFrame: 22
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shield up
+      takeName: Take 001
+      firstFrame: 35
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit heavy
+      takeName: Take 001
+      firstFrame: 51
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 69
+      lastFrame: 91
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shield down
+      takeName: Take 001
+      firstFrame: 38
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: geo
+        weight: 1
+      - path: geo/character
+        weight: 1
+      - path: geo/L_eye
+        weight: 1
+      - path: geo/mouth1
+        weight: 1
+      - path: geo/R_eye
+        weight: 1
+      - path: geo/Weapons
+        weight: 1
+      - path: geo/Weapons/Shield
+        weight: 1
+      - path: geo/Weapons/Spear
+        weight: 1
+      - path: jnts
+        weight: 1
+      - path: jnts/Slave_C_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_loin1/Slave_C_loin2/Slave_C_loin3/Slave_C_loin4/Slave_C_loin5
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_L_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_head_R_eye
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthBot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_C_mouthTop
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_L_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow1
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_eyebrow2
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_C_neck/Slave_C_head/Slave_R_mouthCorn
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_L_clavicle/Slave_L_shoulder/Slave_L_elbow/Slave_L_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_C_spine1/Slave_C_spine2/Slave_C_chest/Slave_R_clavicle/Slave_R_shoulder/Slave_R_elbow/Slave_R_hand
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_L_hip/Slave_L_knee/Slave_L_foot
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee
+        weight: 1
+      - path: jnts/Slave_C_hip/Slave_R_hip/Slave_R_knee/Slave_R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

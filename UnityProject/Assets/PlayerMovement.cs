@@ -19,22 +19,40 @@ public class PlayerMovement : MonoBehaviour
     public float minInput = 0.25f;
     public float rotationSpeed = 8f;
     public PlayerNumber playerNumber;
+    public Weapon weapon;
 
     private Vector3 frontAxis = new Vector3(0, 1, 0);
+    private Animator animator;
+    string inputPrefix;
 
     // Use this for initialization
     void Start()
     {
-
+        animator = GetComponent<Animator>();
+        inputPrefix = playerNumber.ToString() + "_";
     }
 
     void FixedUpdate()
     {
+        UpdateMovement();
         UpdateInput();
     }
 
-    // updates input received, tramsformations are updated according to input
     void UpdateInput()
+    {
+        if (Input.GetAxis(inputPrefix + "Attack") > minInput && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+        {
+            weapon.Attack();
+        }
+
+        if (Input.GetAxis(inputPrefix + "Shield") > minInput)
+        {
+            animator.SetBool("Shield", true);
+        }
+    }
+
+    // updates input received, tramsformations are updated according to input
+    void UpdateMovement()
     {
         var inputPrefix = playerNumber.ToString() + "_";
 
@@ -59,7 +77,13 @@ public class PlayerMovement : MonoBehaviour
         if (velocity.magnitude != 0f)
         {
             var vn = velocity.normalized;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(vn, Vector3.up), rotationSpeed);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(-vn, Vector3.up), rotationSpeed);
+
+            animator.SetBool("Walking", true);
+        }
+        else
+        {
+            animator.SetBool("Walking", false);
         }
 
         var rb = GetComponent<Rigidbody>();
