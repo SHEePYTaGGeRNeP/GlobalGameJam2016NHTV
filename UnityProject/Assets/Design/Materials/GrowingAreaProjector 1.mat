@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: QuicTimeAreaProjector
+  m_Name: GrowingAreaProjector 1
   m_Shader: {fileID: 4800000, guid: d13f67f5e607f66478cedb191973b2ea, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -178,7 +178,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0, g: 0.32550722, b: 0.9632353, a: 1}
+        second: {r: 1, g: 0.26504397, b: 0, a: 1}
       data:
         first:
           name: _node_7680
