@@ -26,7 +26,7 @@
 
         void OnTriggerEnter(Collider collider){
 			if (collider.tag == "DamageGiver") {
-				TakeDamage (collider.GetComponent<DammageGiver> ().dammageAmount); 
+				TakeDamage (collider.GetComponent<DamageGiver> ().damageAmount); 
 				Debug.Log (CurrentHealth);
 			}
         }

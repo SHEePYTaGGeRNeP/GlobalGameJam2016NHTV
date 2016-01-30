@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DammageGiver : MonoBehaviour {
+public class DamageGiver : MonoBehaviour {
 
-	public int dammageAmount; 
+	public int damageAmount; 
 
 	// Use this for initialization
 	void Start () {
