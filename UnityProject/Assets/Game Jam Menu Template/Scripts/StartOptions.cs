@@ -74,8 +74,11 @@ namespace Assets.Game_Jam_Menu_Template.Scripts
             //Hide the main menu UI element
             this.showPanels.HideMenu ();
 
+            // Nieuwe Loadingscreenmanager
+            LoadingScreenManager.LoadScene(this.sceneToStart);
+
             //Load the selected scene, by scene index number in build settings
-            SceneManager.LoadScene(this.sceneToStart);
+            //SceneManager.LoadScene(this.sceneToStart);
         }
 
 
