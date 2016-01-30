@@ -1,6 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+
+using UnityEngine;
 using System.Collections;
+
 using Assets.Scripts.Units;
+
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,22 +15,19 @@ public class PlayerMovement : MonoBehaviour
         P2
     }
 
-    public float movementSpeed = 6.66f;
+    public float movementSpeed = 0.2f;
     public float minInput = 0.25f;
     public float rotationSpeed = 8f;
     public PlayerNumber playerNumber;
-    public Weapon weapon;
-
 
     private Vector3 frontAxis = new Vector3(0, 1, 0);
-    private string inputPrefix;
 
     // Use this for initialization
     void Start()
     {
-        inputPrefix = playerNumber.ToString() + "_";
+
     }
-    
+
     void FixedUpdate()
     {
         UpdateInput();
@@ -34,26 +36,22 @@ public class PlayerMovement : MonoBehaviour
     // updates input received, tramsformations are updated according to input
     void UpdateInput()
     {
-        // update movement
-        UpdateMovement();
-
-        if (Input.GetAxis(inputPrefix + "Attack") != 0f)
-        {
-            weapon.Attack();
-        }
-    }
-
-    void UpdateMovement()
-    {
+        var inputPrefix = playerNumber.ToString() + "_";
 
         Vector3 velocity = new Vector3(0, 0, 0);
-        float vaxis = 0f, haxis = 0f;
-        if ((haxis = Input.GetAxis(inputPrefix + "Horizontal")) > minInput || haxis < -minInput)
+        float vaxis = Input.GetAxis(inputPrefix + "Vertical");
+        float haxis = Input.GetAxis(inputPrefix + "Horizontal");
+        if (vaxis < this.minInput && vaxis >- this.minInput )
+            vaxis = KeyboardManager.GetPlayerVertical(this.playerNumber);
+        if (haxis < this.minInput && haxis >- this.minInput)
+            haxis = KeyboardManager.GetPlayerHorizontal(this.playerNumber);
+        
+        if (haxis > minInput || haxis < -minInput)
         {
             velocity += new Vector3(movementSpeed * haxis, 0, 0);
         }
 
-        if ((vaxis = Input.GetAxis(inputPrefix + "Vertical")) > minInput || vaxis < -minInput)
+        if (vaxis > minInput || vaxis < -minInput)
         {
             velocity += new Vector3(0, 0, movementSpeed * -vaxis);
         }
@@ -67,5 +65,6 @@ public class PlayerMovement : MonoBehaviour
         var rb = GetComponent<Rigidbody>();
         rb.velocity = velocity;
         //transform.position += velocity;
+
     }
 }
