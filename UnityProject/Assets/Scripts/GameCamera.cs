@@ -69,7 +69,7 @@
             Rect zoomOutRect = new Rect(this.ZoomOutMargin, this.ZoomOutMargin, width - this.ZoomOutMargin, height - this.ZoomOutMargin);
             Rect zoomInRect = new Rect(this.ZoomInMargin, this.ZoomInMargin, width - this.ZoomInMargin, height - this.ZoomInMargin);
             this._currentCameraDistance = Vector3.Distance(this.transform.position, this.CenterTransform.position);
-            this.SetMiddle();
+            this.SetMiddle(this.Targets);
             List<Transform> transformsOutOfBounds = this.CheckObjectsOutOfCameraBounds(zoomOutRect, this.Targets);
             if (transformsOutOfBounds.Count > 0)
             {
@@ -88,10 +88,12 @@
             float minX = float.MaxValue;
             float maxZ = float.MinValue;
             float minZ = float.MaxValue;
-            Transform[] transforms = new Transform[this.Targets.Length + 1];
+            Transform[] bossTransforms = this.Boss.transform.GetComponentsInChildren<Transform>();
+            Transform[] transforms = new Transform[this.Targets.Length + bossTransforms.Length];
             for (int i = 0; i < this.Targets.Length; i++)
                 transforms[i] = this.Targets[i];
-            transforms[transforms.Length - 1] = this.Boss;
+            for (int i = 0; i < bossTransforms.Length; i++)
+                transforms[this.Targets.Length + i] = bossTransforms[i];
             foreach (Transform t in transforms)
             {
                 if (maxX < t.position.x)
@@ -119,18 +121,18 @@
                 this.ZoomIn(this._targetPosition);
             }
             else
-                this.SetMiddle();
+                this.SetMiddle(transforms);
         }
 
-        private void SetMiddle()
+        private void SetMiddle(IList<Transform> transforms)
         {
             Vector3 middlePoint = Vector3.zero;
-            foreach (Transform t in this.Targets)
+            foreach (Transform t in transforms)
             {
                 Vector3 v = t.position;
                 middlePoint += v;
             }
-            middlePoint = middlePoint / this.Targets.Length;
+            middlePoint = middlePoint / transforms.Count;
             this._targetPosition = new Vector3(middlePoint.x, this.transform.position.y, this.transform.position.z);// middlePoint.z + this._offsetToCenter);
 
             if (this._targetPosition != this.transform.position)

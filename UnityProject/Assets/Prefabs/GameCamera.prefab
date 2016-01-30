@@ -91,15 +91,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888e859740b54a64b9d625b393f731dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerFight: 1
   Logging: 1
   Targets:
   - {fileID: 0}
   - {fileID: 0}
   CenterTransform: {fileID: 0}
+  Boss: {fileID: 0}
   MinCameraDistance: 30
   ZoomInMargin: 100
-  ZoomOutMargin: 40
+  ZoomOutMargin: 60
+  ZoomPerLerp: 5
   _currentCameraDistance: 0
+  CameraSpeed: 10
 --- !u!124 &12400168
 Behaviour:
   m_ObjectHideFlags: 1
