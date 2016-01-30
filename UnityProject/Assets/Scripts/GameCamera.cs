@@ -1,9 +1,7 @@
 ﻿namespace Assets.Scripts
 {
     using System.Collections.Generic;
-
     using Assets.Scripts.Helpers;
-
     using UnityEngine;
 
     [RequireComponent(typeof(Camera))]
@@ -27,12 +25,11 @@
         private void Awake()
         {
             this._camera = this.GetComponent<Camera>();
-            this._offsetToCenter = this.CenterTransform.position.z- this.transform.position.z;
+            this._offsetToCenter = this.CenterTransform.position.z + this.transform.position.z;
         }
 
         private void Update()
         {
-            this.SetMiddle();
             int height = this._camera.pixelHeight;
             int width = this._camera.pixelWidth;
             Rect zoomOutRect = new Rect(this.ZoomOutMargin, this.ZoomOutMargin, width - this.ZoomOutMargin, height - this.ZoomOutMargin);
@@ -48,14 +45,19 @@
             {
                 this.ZoomIn(this._targetPosition);
             }
-
-            // TODO: LERP Camera with this._targetPosition.a
+            else
+            {
+                this.SetMiddle();
+            }
+            // TODO: LERP Camera with this._targetPosition
             if (this.transform.position != this._targetPosition)
                 this.transform.position = this._targetPosition;
         }
 
         private void SetMiddle()
         {
+            if (this.Logging)
+                LogHelper.Log(typeof(GameCamera), "Moving camera");
             Vector3 middlePoint = Vector3.zero;
             foreach (Transform t in this.Targets)
             {
@@ -63,7 +65,7 @@
                 middlePoint += v;
             }
             middlePoint = middlePoint / this.Targets.Length;
-            this._targetPosition = new Vector3(middlePoint.x, this.transform.position.y, this.transform.position.z);// middlePoint.x + this._offsetToCenter);
+            this._targetPosition = new Vector3(middlePoint.x, this.transform.position.y, this.transform.position.z);// middlePoint.z + this._offsetToCenter);
             this.CenterTransform.position = middlePoint;
         }
 
@@ -73,7 +75,6 @@
             if (this.Logging)
                 LogHelper.Log(typeof(GameCamera), "Zooming in..");
         }
-
         private void ZoomOut(Vector3 targetPos)
         {
             this._targetPosition = new Vector3(targetPos.x, targetPos.y + 1, targetPos.z - 1);
