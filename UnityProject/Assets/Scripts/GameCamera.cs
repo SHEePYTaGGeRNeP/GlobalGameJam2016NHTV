@@ -18,6 +18,7 @@
         private Transform[] _targets;
         [SerializeField]
         private Transform _centerTransform;
+        
 
         public int MovementMargin = 20;
 
@@ -43,34 +44,34 @@
             Vector3 middlePoint = Vector3.zero;
             foreach (Transform t in this._targets)
             {
-                Vector3 v = t.position;// this._camera.WorldToScreenPoint(t.position);
+                Vector3 v = t.position;
                 middlePoint += v;
             }
             middlePoint = middlePoint / this._targets.Length;
             this._targetPosition = new Vector3(middlePoint.x, this.transform.position.y, this.transform.position.z);
             this._centerTransform.position = middlePoint;
-            //this.transform.position = middlePoint;
 
-            int height = this._camera.pixelHeight;
-            int width = this._camera.pixelWidth;
-            List<Transform> transformsOutOfBounds = this.CheckObjectsOutOfCameraBounds(height, width);
-            if (transformsOutOfBounds.Count > 0)
-            {
-                this.ZoomOut(this._targetPosition);
-                newCameraMovement = CameraMovement.ZoomOut;
-            }
-        
-            else if (this.transform.position.y != this._cameraStartPosition.y && this.transform.position.z != this._cameraStartPosition.z
-                && this._prevCameraMovement != CameraMovement.ZoomOut)
-            {
-                if (this.CheckObjectsOutOfCameraBounds(width - 2, height - 2).IsNullOrEmpty())
-                {
-                    this.ZoomIn(this._targetPosition);
-                    newCameraMovement = CameraMovement.ZoomIn;
-                }
-                else
-                    Debug.Log("Didnt zoom in !");
-            }
+
+            // Zoom doesn't work so it's commented out.
+
+            //int height = this._camera.pixelHeight;
+            //int width = this._camera.pixelWidth;
+            //Rect zoomOutRect = new Rect(0, 0, width, height);
+            //Rect zoomInRect = new Rect(40 + this.MovementMargin, 40 + this.MovementMargin, width - 80 - this.MovementMargin, height - 80 - this.MovementMargin);
+            //List<Transform> transformsOutOfBounds = this.CheckObjectsOutOfCameraBounds(zoomOutRect);
+            //if (transformsOutOfBounds.Count > 0)
+            //{
+            //    this.ZoomOut(this._targetPosition);
+            //    newCameraMovement = CameraMovement.ZoomOut;
+            //}
+            //else if (this.CheckObjectsInOfCameraBounds(zoomInRect).Count == this._targets.Length)
+            //{
+            //    this.ZoomIn(this._targetPosition);
+            //    newCameraMovement = CameraMovement.ZoomIn;
+            //}
+            //else
+            //    Debug.Log("Not zooming in");
+
 
 
             if (this.transform.position != this._targetPosition)
@@ -80,31 +81,6 @@
                 this._prevCameraMovement = CameraMovement.None;
             else
                 this._prevCameraMovement = newCameraMovement;
-
-
-
-            //Vector3 newCameraPos = Camera.main.transform.position;
-            //newCameraPos.x = middlePoint.x;
-            //Camera.main.transform.position = newCameraPos;
-
-            //// Find the middle point between players.
-            //Vector3 vectorBetweenPlayers = player2.position - player1.position;
-            //middlePoint = player1.position + 0.5f * vectorBetweenPlayers;
-
-            //// Calculate the new distance.
-            //distanceBetweenPlayers = vectorBetweenPlayers.magnitude;
-            //cameraDistance = (distanceBetweenPlayers / 2.0f / aspectRatio) / tanFov;
-
-            //// Set camera to new position.
-            //Vector3 dir = (Camera.main.transform.position - middlePoint).normalized;
-            //Camera.main.transform.position = middlePoint + dir * (cameraDistance + DISTANCE_MARGIN);
-
-            /*
-            CameraMovement newCameraMovement = this._prevCameraMovement;
-            this._targetPosition = this.transform.position;
-
-                */
-
         }
 
 
@@ -120,19 +96,34 @@
             this._targetPosition = new Vector3(targetPos.x, targetPos.y + 1, targetPos.z - 1);
         }
 
-        private List<Transform> CheckObjectsOutOfCameraBounds(int height, int width)
+        private List<Transform> CheckObjectsOutOfCameraBounds(Rect boundingBox)
         {
             List<Transform> transformsOutOfBounds = new List<Transform>();
             Vector3[] positions = new Vector3[this._targets.Length];
             for (int i = 0; i < positions.Length; i++)
             {
-                positions[i] = this._camera.WorldToScreenPoint( this._targets[i].position);
+                positions[i] = this._camera.WorldToScreenPoint(this._targets[i].position);
             }
 
             for (int i = 0; i < positions.Length; i++)
             {
-                Rect cameraRectangle = new Rect(0 + this.MovementMargin, 0 + this.MovementMargin, width - this.MovementMargin, height - this.MovementMargin);
-                if (!cameraRectangle.Contains(positions[i]))
+                if (!boundingBox.Contains(positions[i]))
+                    transformsOutOfBounds.Add(this._targets[i]);
+            }
+            return transformsOutOfBounds;
+        }
+        private List<Transform> CheckObjectsInOfCameraBounds(Rect boundingBox)
+        {
+            List<Transform> transformsOutOfBounds = new List<Transform>();
+            Vector3[] positions = new Vector3[this._targets.Length];
+            for (int i = 0; i < positions.Length; i++)
+            {
+                positions[i] = this._camera.WorldToScreenPoint(this._targets[i].position);
+            }
+
+            for (int i = 0; i < positions.Length; i++)
+            {
+                if (boundingBox.Contains(positions[i]))
                     transformsOutOfBounds.Add(this._targets[i]);
             }
             return transformsOutOfBounds;

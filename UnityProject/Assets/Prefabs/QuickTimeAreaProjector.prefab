@@ -1,39 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &139300
+--- !u!1 &177016
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 407896}
-  - 119: {fileID: 11925014}
+  - 4: {fileID: 479040}
+  - 119: {fileID: 11920446}
   m_Layer: 0
-  m_Name: DangerAreaProjector
+  m_Name: QuickTimeAreaProjector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &407896
+--- !u!4 &479040
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139300}
+  m_GameObject: {fileID: 177016}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -13.32, y: 2.214, z: -0.508}
+  m_LocalPosition: {x: -4.84, y: 2.214, z: -0.919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!119 &11925014
+--- !u!119 &11920446
 Projector:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139300}
+  m_GameObject: {fileID: 177016}
   m_Enabled: 1
   serializedVersion: 2
   m_NearClipPlane: 0.1
@@ -42,7 +42,7 @@ Projector:
   m_AspectRatio: 1
   m_Orthographic: 1
   m_OrthographicSize: 2
-  m_Material: {fileID: 2100000, guid: f9cff3de1dee260488b3e30a80ad12b6, type: 2}
+  m_Material: {fileID: 2100000, guid: b429f549053e36a448db56de8f26612d, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -55,5 +55,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 139300}
+  m_RootGameObject: {fileID: 177016}
   m_IsPrefabParent: 1
