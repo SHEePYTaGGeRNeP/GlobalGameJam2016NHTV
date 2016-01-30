@@ -2,15 +2,15 @@
 {
     using UnityEngine;
 
-    [RequireComponent(typeof(Collider))]
-    internal class Unit : MonoBehaviour
+    public class Unit : MonoBehaviour
     {
-        public int MaxHealth { get; protected set; }
+		public int MaxHealt; 
+		public int CurrentHealth;
 
-        public int CurrentHealth { get; protected set; }
 
-        public int Damage { get; protected set; }
-
+		public void Awake(){
+			CurrentHealth = MaxHealt; 
+		}
 
         public void TakeDamage(int damage)
         {
@@ -24,10 +24,11 @@
 
         }
 
-        void OnTriggerEnter(Collider other)
-        {
-            Debug.Log("Oh no i got hit!");
-            
+        void OnTriggerEnter(Collider collider){
+			if (collider.tag == "DamageGiver") {
+				TakeDamage (collider.GetComponent<DammageGiver> ().dammageAmount); 
+				Debug.Log (CurrentHealth);
+			}
         }
     }
 }
