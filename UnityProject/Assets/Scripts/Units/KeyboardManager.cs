@@ -2,7 +2,7 @@
 {
     using UnityEngine;
 
-    internal class KeyboardManager
+    public class KeyboardManager
     {
 
         public static float GetPlayerHorizontal(PlayerMovement.PlayerNumber player)
