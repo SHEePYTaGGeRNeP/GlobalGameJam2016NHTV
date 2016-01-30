@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 41f61d6c516ac2147ac796e3d6c22d05
-timeCreated: 1454118646
+guid: 4e24e3aabeaf24f4d87a957aaab91030
+timeCreated: 1454149262
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: E_PIllar_003
+    4300000: E_Ground_001
   materials:
     importMaterials: 1
     materialName: 0
