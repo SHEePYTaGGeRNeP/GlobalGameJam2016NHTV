@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 819cc024046a01143b6839717d8f5b33
+timeCreated: 1454150745
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - levelStartMusic: {fileID: 8300000, guid: df1e2efb80b037248b867bbca0275bc7, type: 3}
+  - bossMusicLoop: {fileID: 8300000, guid: 0c26c1f8c4a0e064c9bfe9455747d9e0, type: 3}
+  - playerFightMusicLoop: {fileID: 8300000, guid: 4bd14ccdd907ced4fa3449fc1ac788a6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
