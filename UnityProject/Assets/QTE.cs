@@ -24,8 +24,9 @@ public class QTE : MonoBehaviour
     public List<GameObject> buttons;
     public float activeTime = 1f; // qte active time in seconds
     public bool activate = false;
-    public Camera camera;
+    public new Camera camera;
 
+    private bool QTEWasActive = false;
     private float timer = 0f;
 
 	// Use this for initialization
@@ -40,11 +41,21 @@ public class QTE : MonoBehaviour
         var buttonName = currentButton.ToString();
         var button = buttons.FindLast(x => x.name.Contains(buttonName));
         var pos = camera.WorldToScreenPoint(buttonUITransform.position);
+        
+        var triggerClass1 = trigger1.GetComponent<QTETrigger>();
+        var triggerClass2 = trigger2.GetComponent<QTETrigger>();
+
+        if (triggerClass1.triggeredByPlayer && triggerClass2.triggeredByPlayer && !QTEWasActive)
+        {
+            QTEWasActive = true;
+            Activate();
+        }
 
         if (activate)
         {
             if (!button.activeSelf)
             {
+                button.transform.position = pos;
                 button.SetActive(true);
             }
 
