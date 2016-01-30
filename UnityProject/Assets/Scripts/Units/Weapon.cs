@@ -1,54 +1,103 @@
 ﻿namespace Assets.Scripts.Units
 {
     using UnityEngine;
-    class Weapon : MonoBehaviour
+    public class Weapon : MonoBehaviour
     {
-
-        public float speed = 1.0F;
-        public float Forward = 1f;
-        private Vector3 _startPos;
-
-        private Vector3 startMarker;
-        private Vector3 endMarker;
-        private float startTime;
-        private float journeyLength;
-        private bool _returning = false;
-        private bool _done = false;
-        void Awake()
+        enum AttackState
         {
-            this._startPos = this.transform.position;
+            Neutral,
+            Attacking,
+            Returning
+        }
+
+        public float speed = 1.0f;
+        public float distance = 1f;
+
+        private Rigidbody currRigidbody;
+        private float distanceCovered = 0f;
+        private Vector3 startPos;
+        private Vector3 velocity;
+        private AttackState attackState = AttackState.Neutral;
+
+        void Start()
+        {
+            currRigidbody = gameObject.GetComponent<Rigidbody>();
         }
 
         public void Attack()
         {
-            this.startTime = Time.time;
-            this.startMarker = this._startPos;
-            this.endMarker = new Vector3(this._startPos.x, this._startPos.y, this._startPos.z + this.Forward);
-            this.journeyLength = Vector3.Distance(this.startMarker, this.endMarker);
-            this._returning = false;
-            this._done = false;
+            if (attackState == AttackState.Neutral)
+            {
+                attackState = AttackState.Attacking;
+                startPos = transform.position;
+            }
         }
+
         private void ReturnToOriginal()
         {
-            this._returning = true;
-            this.startTime = Time.time;
-            this.startMarker = this.transform.position;
-            this.endMarker = this._startPos;
-            this.journeyLength = Vector3.Distance(this.startMarker, this.endMarker);
+            //currRigidbody.velocity = transform.forward * -speed;
         }
-        void Update()
+
+        void FixedUpdate()
         {
-            if (this.startMarker == Vector3.zero || this._done) return;
-            float distCovered = (Time.time - this.startTime) * this.speed;
-            float fracJourney = distCovered / this.journeyLength;
-            this.transform.position = Vector3.Lerp(this.startMarker, this.endMarker, fracJourney);
+            switch (attackState)
+            {
+                case AttackState.Attacking:
+                    {
+                        velocity = transform.forward * speed * Time.fixedDeltaTime;
+                        transform.position += velocity;
 
-            if (this.transform.position == this.endMarker && !this._returning)
-                this.ReturnToOriginal();
-            else if (this.transform.position == this.endMarker)
-                this._done = true;
 
-               
+                        //var distDiff = Vector3.SqrMagnitude(transform.position - startPos) - ;
+                        //print(dist);
+                        //if (dist < 1f)
+                        //{
+                        //    attackState = AttackState.Returning;
+                        //}
+
+                        //distanceCovered = Vector3.Distance(transform.localPosition, startPos);
+                        /*
+                        float step = speed * Time.fixedDeltaTime;
+                        Debug.DrawLine(transform.position, transform.position + transform.forward, Color.red);
+                        var target = startPos + transform.forward * distance;
+                        */
+                        //transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, step);
+
+                        /*
+                        Debug.DrawLine(startPos, target, Color.red);
+
+                        velocity = (target - startPos) * step;
+                        transform.position += velocity;
+
+                        var dist = Vector3.SqrMagnitude(transform.position -target);
+                        print(dist);
+                        if (dist < 1f)
+                        {
+                            attackState = AttackState.Returning;
+                        }
+                        
+                        */
+
+                        break;
+                    }
+                case AttackState.Returning:
+                    {
+                        velocity = -transform.forward * speed * Time.fixedDeltaTime;
+                        transform.position += velocity;
+                        break;
+                    }
+                case AttackState.Neutral:
+                    {
+                        break;
+                    }
+                default:
+                    {
+                        print("Switch state not defined");
+                        break;
+                    }
+            }
+
+            //transform.localPosition += velocity;
         }
 
     }
