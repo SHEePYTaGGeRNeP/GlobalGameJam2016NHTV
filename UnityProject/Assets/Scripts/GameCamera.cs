@@ -93,7 +93,7 @@
             for (int i = 0; i < this.Targets.Length; i++)
                 transforms[i] = this.Targets[i];
             for (int i = 0; i < bossTransforms.Length; i++)
-                transforms[this.Targets.Length + i] = bossTransforms[i];
+                transforms[this.Targets.Length+ i] = bossTransforms[i];
             foreach (Transform t in transforms)
             {
                 if (maxX < t.position.x)

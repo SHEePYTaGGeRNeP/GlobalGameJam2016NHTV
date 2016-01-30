@@ -92,6 +92,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11431050, guid: 3d896b40e91fec8428555a8e415f8be0, type: 2}
+      propertyPath: Targets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 496034, guid: 3d896b40e91fec8428555a8e415f8be0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -142,7 +146,7 @@ Prefab:
       objectReference: {fileID: 1540966227}
     - target: {fileID: 11431050, guid: 3d896b40e91fec8428555a8e415f8be0, type: 2}
       propertyPath: PlayerFight
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d896b40e91fec8428555a8e415f8be0, type: 2}
