@@ -41,9 +41,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 velocity = new Vector3(0, 0, 0);
         float vaxis = Input.GetAxis(inputPrefix + "Vertical");
         float haxis = Input.GetAxis(inputPrefix + "Horizontal");
-        if (vaxis == 0)
+        if (vaxis < this.minInput && vaxis >- this.minInput )
             vaxis = KeyboardManager.GetPlayerVertical(this.playerNumber);
-        if (haxis == 0)
+        if (haxis < this.minInput && haxis >- this.minInput)
             haxis = KeyboardManager.GetPlayerHorizontal(this.playerNumber);
 
         Debug.Log(String.Format("x: {0} y: {1}", haxis, vaxis));
