@@ -4,7 +4,22 @@
 
     public class KeyboardManager
     {
-
+        public static bool GetPlayerAttack(PlayerMovement.PlayerNumber player)
+        {
+            if (player == PlayerMovement.PlayerNumber.P1)
+                return Input.GetKey(KeyCode.Q);
+            if (player == PlayerMovement.PlayerNumber.P2)
+                return Input.GetKey(KeyCode.K);
+            return false;
+        }
+        public static bool GetPlayerBlock(PlayerMovement.PlayerNumber player)
+        {
+            if (player == PlayerMovement.PlayerNumber.P1)
+                return Input.GetKey(KeyCode.E);
+            if (player == PlayerMovement.PlayerNumber.P2)
+                return Input.GetKey(KeyCode.L);
+            return false;
+        }
         public static float GetPlayerHorizontal(PlayerMovement.PlayerNumber player)
         {
             if (player == PlayerMovement.PlayerNumber.P1)

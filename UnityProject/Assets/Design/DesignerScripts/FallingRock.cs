@@ -4,7 +4,7 @@ using System.Collections;
 public class FallingRock : MonoBehaviour {
 
 	public GameObject particleEffectRef;
-	public GameObject painSphereRef; 
+	public Feedback feedbackRef; 
 
 	float timer; 
 	bool timerStart = false; 
@@ -22,13 +22,16 @@ public class FallingRock : MonoBehaviour {
 				Destroy (gameObject); 
 
 		}
+
+		if (transform.position.y <= -200)
+			Destroy (gameObject); 
 		
 	}
 
 	void OnTriggerEnter(Collider  collider) {
 		if (collider.gameObject.tag == "Ground") {
-			//Instantiate(particleEffectRef, transform.position, Quaternion.identity);
-			//Instantiate(painSphereRef, transform.position, Quaternion.identity);
+			Instantiate(particleEffectRef, transform.position, Quaternion.Euler(-90,0,0));
+			feedbackRef.PlayImpactsF(); 
 			timerStart = true; 
 		}
 

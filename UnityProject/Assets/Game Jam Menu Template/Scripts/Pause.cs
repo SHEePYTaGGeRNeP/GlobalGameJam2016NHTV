@@ -22,7 +22,7 @@ namespace Assets.Game_Jam_Menu_Template.Scripts
         void Update () {
 
             //Check if the Cancel button in Input Manager is down this frame (default is Escape key) and that game is not paused, and that we're not in main menu
-            if (Input.GetButtonDown ("Cancel") && !this.isPaused && !this.startScript.inMainMenu) 
+            /*if (Input.GetButtonDown ("Cancel") && !this.isPaused && !this.startScript.inMainMenu) 
             {
                 //Call the DoPause function to pause the game
                 this.DoPause();
@@ -32,7 +32,7 @@ namespace Assets.Game_Jam_Menu_Template.Scripts
             {
                 //Call the UnPause function to unpause the game
                 this.UnPause ();
-            }
+            }*/
 	
         }
 

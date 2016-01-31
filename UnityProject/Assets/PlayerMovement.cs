@@ -24,30 +24,71 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 frontAxis = new Vector3(0, 1, 0);
     private Animator animator;
     string inputPrefix;
+    private Unit unit;
 
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
         inputPrefix = playerNumber.ToString() + "_";
+        unit = GetComponent<Unit>();
     }
 
     void FixedUpdate()
     {
+        if (GetComponent<Unit>().dead)
+        {
+            return;
+        }
+
+        //print("Updating input: " + gameObject.name);
+
         UpdateMovement();
         UpdateInput();
     }
 
     void UpdateInput()
     {
-        if (Input.GetAxis(inputPrefix + "Attack") > minInput && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+        bool shielding = animator.GetBool("Shield");
+        bool attacking = animator.GetBool("Attacking");
+        if (!attacking && Input.GetAxis(inputPrefix + "Attack") > minInput || KeyboardManager.GetPlayerAttack(playerNumber))
         {
-            weapon.Attack();
+            if (unit.currentStamina >= unit.StaminaCostAttack)
+            {
+                weapon.Attack();
+                unit.useStamina(unit.StaminaCostAttack);
+            }
         }
 
-        if (Input.GetAxis(inputPrefix + "Shield") > minInput)
+        if ((Input.GetAxis(inputPrefix + "Shield") > minInput || KeyboardManager.GetPlayerBlock(playerNumber)) && !shielding)
         {
-            animator.SetBool("Shield", true);
+            if (unit.currentStamina >= unit.StaminaCostShield)
+            {
+                Debug.Log("Shieldtrigger");
+                animator.SetBool("Shield", true);
+                animator.SetTrigger("ShieldTrigger");
+                if (Time.timeSinceLevelLoad - unit.ShieldUpStartTime > unit.StaminaShieldTick)
+                {
+                    unit.useStamina(unit.StaminaCostShield);
+                    unit.ShieldUpStartTime = Time.timeSinceLevelLoad;
+                }
+            }
+        }
+        else if (shielding && (Input.GetAxis(inputPrefix + "Shield") < minInput))
+        {
+            animator.SetBool("Shield", false);
+        }
+        else if (shielding)
+        {
+            if (unit.currentStamina < unit.StaminaCostShield)
+            {
+                animator.SetBool("Shield", false);
+            }
+            if (Time.timeSinceLevelLoad - unit.ShieldUpStartTime > unit.StaminaShieldTick)
+            {
+                unit.useStamina(unit.StaminaCostShield);
+                unit.ShieldUpStartTime = Time.timeSinceLevelLoad;
+            }
         }
     }
 
@@ -59,19 +100,25 @@ public class PlayerMovement : MonoBehaviour
         Vector3 velocity = new Vector3(0, 0, 0);
         float vaxis = Input.GetAxis(inputPrefix + "Vertical");
         float haxis = Input.GetAxis(inputPrefix + "Horizontal");
-        if (vaxis < this.minInput && vaxis >- this.minInput )
+        if (vaxis < this.minInput && vaxis > -this.minInput)
             vaxis = KeyboardManager.GetPlayerVertical(this.playerNumber);
-        if (haxis < this.minInput && haxis >- this.minInput)
+        if (haxis < this.minInput && haxis > -this.minInput)
             haxis = KeyboardManager.GetPlayerHorizontal(this.playerNumber);
-        
+
+        float reducedMovementSpeed = 1f;
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+            reducedMovementSpeed = 0.3f;
+
+
+
         if (haxis > minInput || haxis < -minInput)
         {
-            velocity += new Vector3(movementSpeed * haxis, 0, 0);
+            velocity += new Vector3(movementSpeed * reducedMovementSpeed * haxis, 0, 0);
         }
 
         if (vaxis > minInput || vaxis < -minInput)
         {
-            velocity += new Vector3(0, 0, movementSpeed * -vaxis);
+            velocity += new Vector3(0, 0, movementSpeed * reducedMovementSpeed * -vaxis);
         }
 
         if (velocity.magnitude != 0f)
@@ -86,9 +133,12 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Walking", false);
         }
 
-        var rb = GetComponent<Rigidbody>();
-        rb.velocity = velocity;
-        //transform.position += velocity;
 
+        if (!animator.GetBool("Shield"))
+        {
+            var rb = GetComponent<Rigidbody>();
+            rb.velocity = velocity;
+            //transform.position += velocity;
+        }
     }
 }

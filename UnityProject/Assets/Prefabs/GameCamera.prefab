@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135988}
   m_LocalRotation: {x: 0.38268346, y: 0, z: 0, w: 0.9238795}
-  m_LocalPosition: {x: 5, y: 15.8, z: -13.8}
+  m_LocalPosition: {x: -23.62, y: 46.1, z: -146.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,19 +91,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888e859740b54a64b9d625b393f731dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerFight: 1
-  Logging: 1
-  Targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  CenterTransform: {fileID: 0}
-  Boss: {fileID: 0}
-  MinCameraDistance: 30
-  ZoomInMargin: 100
-  ZoomOutMargin: 60
-  ZoomPerLerp: 5
-  _currentCameraDistance: 0
-  CameraSpeed: 10
+  playerOne: {fileID: 0}
+  playerTwo: {fileID: 0}
+  maxZoom: 60
+  minZoom: 50
+  zoomFactor: 0.2
+  zoom: 60
 --- !u!124 &12400168
 Behaviour:
   m_ObjectHideFlags: 1

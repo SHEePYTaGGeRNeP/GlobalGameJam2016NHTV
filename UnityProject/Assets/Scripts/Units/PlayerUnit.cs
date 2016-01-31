@@ -7,16 +7,9 @@
         [SerializeField]
         private Weapon _weapon;
         
+        
 
-        public void Update()
-        {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                this.DoAttack();
-            }
-        }
-
-        public override void DoAttack()
+        public void DoAttack()
         {
             this._weapon.Attack();
         }

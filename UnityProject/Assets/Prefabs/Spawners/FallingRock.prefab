@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11413282}
   - 54: {fileID: 5489942}
   - 135: {fileID: 13507656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FallingRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,8 +30,25 @@ GameObject:
   - 4: {fileID: 416664}
   - 119: {fileID: 11964796}
   - 54: {fileID: 5406468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DangerAreaProjector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &163196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 454686}
+  - 114: {fileID: 11456110}
+  - 82: {fileID: 8212932}
+  m_Layer: 8
+  m_Name: Feedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +67,7 @@ GameObject:
   - 23: {fileID: 2399056}
   - 54: {fileID: 5489668}
   - 114: {fileID: 11434294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DamageGiverSphere
   m_TagString: DamageGiver
   m_Icon: {fileID: 0}
@@ -64,8 +81,20 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161274}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: -0.049800016, z: 0}
+  m_LocalPosition: {x: 0, y: 0.686, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 484096}
+  m_RootOrder: 1
+--- !u!4 &454686
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 484096}
   m_RootOrder: 0
@@ -80,7 +109,7 @@ Transform:
   m_LocalScale: {x: 0.18, y: 0.18, z: 0.18}
   m_Children: []
   m_Father: {fileID: 484096}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &484096
 Transform:
   m_ObjectHideFlags: 1
@@ -88,9 +117,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.51, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: -8.440155, y: 2.4222164, z: -100.042145}
+  m_LocalScale: {x: 70, y: 70, z: 70}
   m_Children:
+  - {fileID: 454686}
   - {fileID: 416664}
   - {fileID: 468974}
   m_Father: {fileID: 0}
@@ -206,6 +236,80 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &8212932
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163196}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &11413282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,8 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918c72ca2a30ce94fbdd211499d315bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffectRef: {fileID: 0}
-  painSphereRef: {fileID: 0}
+  particleEffectRef: {fileID: 121790, guid: c2d3a3430d0c25f488645f0661a64835, type: 2}
+  feedbackRef: {fileID: 11456110}
 --- !u!114 &11434294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,7 +334,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a1c588801a5b14887d6814dd3665db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 20
+  attacking: 0
+--- !u!114 &11456110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7e5c78abcf45b4a9463a0678dc0923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossMoansA:
+  - {fileID: 8300000, guid: 93a8b9ad97e957942b0a6bb57aa237cd, type: 3}
+  - {fileID: 8300000, guid: af3a550c246dfe3478b807a9a219e7de, type: 3}
+  - {fileID: 8300000, guid: 41d23b31c0015d14d989028294794e8f, type: 3}
+  - {fileID: 8300000, guid: 26db9e220443bdc4790b97e437fb4ef2, type: 3}
+  bossDeathMoansA:
+  - {fileID: 8300000, guid: 2a27163c348a96b40b6e43296e40d8a8, type: 3}
+  - {fileID: 8300000, guid: f20c79ee8b60c2544a8169bf80c31dbb, type: 3}
+  impactsA:
+  - {fileID: 8300000, guid: 3041456dec3f89c43847760aa104a925, type: 3}
+  - {fileID: 8300000, guid: 6e83f49eda6dc464e9c0d61c53a2829c, type: 3}
+  playerMoansA: []
+  hitSplashesA:
+  - {fileID: 8300000, guid: 96014700596b8e74db2c7d0853f0c5c0, type: 3}
+  - {fileID: 8300000, guid: ffd944a2463dd4640949c5d107c9c11c, type: 3}
+  - {fileID: 8300000, guid: 1c2d382e9b448d746b5471e161439f6e, type: 3}
+  - {fileID: 8300000, guid: a3bed05eb02860f47b070ca24cd7f175, type: 3}
+  attacksA:
+  - {fileID: 8300000, guid: d79dac6e6df96254c9769610daf4769c, type: 3}
+  - {fileID: 8300000, guid: a9c255c826f09ef459511088088b68a6, type: 3}
+  footstepsA:
+  - {fileID: 8300000, guid: 70fdcf327c0bf4948a7015bf4b42f30f, type: 3}
+  - {fileID: 8300000, guid: 4b1f0b9202e7b7744b84c803385777db, type: 3}
+  raiseShield: {fileID: 0}
+  blockAttack: {fileID: 0}
+  meshToBlink: {fileID: 0}
+  blinkMaterial: {fileID: 0}
 --- !u!119 &11964796
 Projector:
   m_ObjectHideFlags: 1
@@ -244,11 +387,11 @@ Projector:
   m_FieldOfView: 60
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 2.5
+  m_OrthographicSize: 9
   m_Material: {fileID: 2100000, guid: f9cff3de1dee260488b3e30a80ad12b6, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!135 &13507656
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -279,7 +422,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: particleEffectRef
+      value: 
+      objectReference: {fileID: 121790, guid: c2d3a3430d0c25f488645f0661a64835, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119616}

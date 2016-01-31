@@ -267,9 +267,10 @@ GameObject:
   - 54: {fileID: 5440060}
   - 136: {fileID: 13672660}
   - 114: {fileID: 11413432}
+  - 114: {fileID: 11412280}
   m_Layer: 0
   m_Name: ModeledPlayerCharachter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1147,7 +1148,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalPosition: {x: -20.1, y: 0.05, z: -66.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408598}
@@ -1293,7 +1294,7 @@ Animator:
   m_GameObject: {fileID: 137968}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b8177274cd1f80a4fbc3dcdf78fa7115, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f98f57968423d6459cfea4752a629ac, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1301,6 +1302,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11412280
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fa50258a43a534c8212e4c17473e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealt: 100
+  CurrentHealth: 0
+  _weapon: {fileID: 0}
 --- !u!114 &11413432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1316,6 +1331,7 @@ MonoBehaviour:
   minInput: 0.25
   rotationSpeed: 8
   playerNumber: 0
+  weapon: {fileID: 0}
 --- !u!136 &13672660
 CapsuleCollider:
   m_ObjectHideFlags: 1

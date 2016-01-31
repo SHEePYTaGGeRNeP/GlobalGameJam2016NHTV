@@ -18,11 +18,13 @@
         private Vector3 velocity;
         private AttackState attackState = AttackState.Neutral;
         private Animator animator;
+        private Collider boxCollider;
 
         void Start()
         {
             currRigidbody = gameObject.GetComponent<Rigidbody>();
             animator = GetComponent<Collider>().transform.root.GetComponent<Animator>();
+            boxCollider = GetComponent<Collider>();
         }
 
         public void Attack()
@@ -64,6 +66,7 @@
                         break;
                     }
             }
+            
         }
 
     }

@@ -37,7 +37,9 @@ ModelImporter:
     4300006: L_armLower
     4300008: R_armUpper
     4300010: R_armLower
-    7400000: Take 001
+    7400000: Idle
+    7400002: Attack
+    7400004: HoldAttack
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -59,11 +61,137 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: golem_base
+        weight: 1
+      - path: golem_base/Golem_head
+        weight: 1
+      - path: golem_base/L_armUpper
+        weight: 1
+      - path: golem_base/L_armUpper/L_armLower
+        weight: 1
+      - path: golem_base/R_armUpper
+        weight: 1
+      - path: golem_base/R_armUpper/R_armLower
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: golem_base
+        weight: 1
+      - path: golem_base/Golem_head
+        weight: 1
+      - path: golem_base/L_armUpper
+        weight: 1
+      - path: golem_base/L_armUpper/L_armLower
+        weight: 1
+      - path: golem_base/R_armUpper
+        weight: 1
+      - path: golem_base/R_armUpper/R_armLower
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: HoldAttack
+      takeName: Take 001
+      firstFrame: 26
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: golem_base
+        weight: 1
+      - path: golem_base/Golem_head
+        weight: 1
+      - path: golem_base/L_armUpper
+        weight: 1
+      - path: golem_base/L_armUpper/L_armLower
+        weight: 1
+      - path: golem_base/R_armUpper
+        weight: 1
+      - path: golem_base/R_armUpper/R_armLower
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
