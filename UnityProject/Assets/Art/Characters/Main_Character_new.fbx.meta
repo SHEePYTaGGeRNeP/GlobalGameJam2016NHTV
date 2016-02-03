@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: ee1545ac37955664aa31bbe6e7d1f541
+timeCreated: 1454244325
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: character
+    100002: character 1
+    100004: geo
+    100006: jnts
+    100008: L_eye
+    100010: //RootNode
+    100012: mouth1
+    100014: R_eye
+    100016: Shield
+    100018: Slave_C_chest
+    100020: Slave_C_head
+    100022: Slave_C_head_L_eye
+    100024: Slave_C_head_R_eye
+    100026: Slave_C_hip
+    100028: Slave_C_loin1
+    100030: Slave_C_loin2
+    100032: Slave_C_loin3
+    100034: Slave_C_loin4
+    100036: Slave_C_loin5
+    100038: Slave_C_mouthBot
+    100040: Slave_C_mouthTop
+    100042: Slave_C_neck
+    100044: Slave_C_spine1
+    100046: Slave_C_spine2
+    100048: Slave_L_clavicle
+    100050: Slave_L_elbow
+    100052: Slave_L_eyebrow1
+    100054: Slave_L_eyebrow2
+    100056: Slave_L_foot
+    100058: Slave_L_hand
+    100060: Slave_L_hip
+    100062: Slave_L_knee
+    100064: Slave_L_mouthCorn
+    100066: Slave_L_shoulder
+    100068: Slave_R_clavicle
+    100070: Slave_R_elbow
+    100072: Slave_R_eyebrow1
+    100074: Slave_R_eyebrow2
+    100076: Slave_R_foot
+    100078: Slave_R_hand
+    100080: Slave_R_hip
+    100082: Slave_R_knee
+    100084: Slave_R_mouthCorn
+    100086: Slave_R_shoulder
+    100088: Spear
+    100090: Weappons
+    400000: character
+    400002: character 1
+    400004: geo
+    400006: jnts
+    400008: L_eye
+    400010: //RootNode
+    400012: mouth1
+    400014: R_eye
+    400016: Shield
+    400018: Slave_C_chest
+    400020: Slave_C_head
+    400022: Slave_C_head_L_eye
+    400024: Slave_C_head_R_eye
+    400026: Slave_C_hip
+    400028: Slave_C_loin1
+    400030: Slave_C_loin2
+    400032: Slave_C_loin3
+    400034: Slave_C_loin4
+    400036: Slave_C_loin5
+    400038: Slave_C_mouthBot
+    400040: Slave_C_mouthTop
+    400042: Slave_C_neck
+    400044: Slave_C_spine1
+    400046: Slave_C_spine2
+    400048: Slave_L_clavicle
+    400050: Slave_L_elbow
+    400052: Slave_L_eyebrow1
+    400054: Slave_L_eyebrow2
+    400056: Slave_L_foot
+    400058: Slave_L_hand
+    400060: Slave_L_hip
+    400062: Slave_L_knee
+    400064: Slave_L_mouthCorn
+    400066: Slave_L_shoulder
+    400068: Slave_R_clavicle
+    400070: Slave_R_elbow
+    400072: Slave_R_eyebrow1
+    400074: Slave_R_eyebrow2
+    400076: Slave_R_foot
+    400078: Slave_R_hand
+    400080: Slave_R_hip
+    400082: Slave_R_knee
+    400084: Slave_R_mouthCorn
+    400086: Slave_R_shoulder
+    400088: Spear
+    400090: Weappons
+    4300000: character
+    4300002: L_eye
+    4300004: mouth1
+    4300006: R_eye
+    4300008: Spear
+    4300010: Shield
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: character 1
+    13700002: L_eye
+    13700004: mouth1
+    13700006: R_eye
+    13700008: Shield
+    13700010: Spear
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
